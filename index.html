@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NatureTravel Hub86 AI Agent</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#0a1f14;color:white;font-family:Arial;text-align:center;padding:20px}
+.box{background:white;color:black;padding:20px;border-radius:15px;max-width:500px;margin:auto}
+input{width:90%;padding:12px;border-radius:8px;border:1px solid #ccc;margin-top:10px}
+button{padding:12px 20px;background:#0a8a43;color:white;border:none;border-radius:8px;margin-top:10px;width:95%}
+#reply{margin-top:20px;text-align:left;background:#e8f5e9;padding:15px;border-radius:10px}
+</style>
+</head>
+<body>
+<h1>🌲 NatureTravel Hub86</h1>
+<h3>Your Free Nature Travel AI Agent</h3>
+<div class="box">
+<p>Where do you want to travel? 🏔️</p>
+<input id="q" placeholder="e.g. Best forest in Pakistan for family trip">
+<button onclick="ask()">Ask Agent</button>
+<div id="reply">Agent ready... Ask anything!</div>
+</div>
+<script>
+function ask(){
+let question=document.getElementById('q').value;
+let r=document.getElementById('reply');
+if(!question){r.innerHTML='Please type your question first!';return;}
+r.innerHTML='Thinking about: <b>'+question+'</b><br><br>🌿 For this, I suggest:<br>1. Murree & Nathia Gali - Best for family & greenery<br>2. Swat Valley - Mini Switzerland<br>3. Hunza - For mountains<br><br>✅ Tip: Best time is March to June. Take warm clothes and local guide.<br><br>Subscribe to NatureTravel Hub86 for full video guide! 🎥';
+}
+</script>
+</body>
+</html>
